@@ -9,6 +9,14 @@ Given a version number MAJOR.MINOR, increment the:
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR format.
 
+**Use the badge in your library:**
+
+[![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)](https://gitter.im/staltz/comver)
+
+```
+[![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)](https://gitter.im/staltz/comver)
+```
+
 ## How is this different to [SemVer](http://semver.org/)?
 
 Compatible Versioning ("ComVer") is SemVer where every PATCH number is `0` (zero). This way, ComVer is backwards compatible with SemVer.
