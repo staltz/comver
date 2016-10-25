@@ -11,10 +11,10 @@ Additional labels for pre-release and build metadata are available as extensions
 
 **Use the badge in your library:**
 
-[![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)](https://gitter.im/staltz/comver)
+[![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)](https://github.com/staltz/comver)
 
 ```
-[![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)](https://gitter.im/staltz/comver)
+[![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)](https://github.com/staltz/comver)
 ```
 
 ## How is this different to [SemVer](http://semver.org/)?
