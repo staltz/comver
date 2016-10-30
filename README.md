@@ -60,6 +60,47 @@ Hence we recommend communicating new features in the Release notes, as well as h
 
 As far as ComVer is concerned, it is strict, always verifiable, non-human, and only concerns backward compatibility.
 
+## How to communicate breaking changes?
+
+Most breaking changes are tiny differences in behavior caused by bug fixes. They are normally safe for the majority of users to migrate. Other breaking changes affect the API in a minor way. Yet other breaking changes are truly part of an overhaul and require all users to carefully migrate their code.
+
+There is naturally different degrees of importance for breaking changes. To communicate changes, always use a changelog or release notes. To communicate importance of the breaking change in your release notes, we recommend the following changes that answer an fundamental question from your library users: "will (upgrading) affect me (requiring manual migration)?"
+
+You can answer that question with a badge that makes it easy to glance:
+
+
+![yes](https://img.shields.io/badge/will%20it%20affect%20me%3F-yes-red.svg)
+```
+![yes](https://img.shields.io/badge/will%20it%20affect%20me%3F-yes-red.svg)
+```
+
+![probably will](https://img.shields.io/badge/will%20it%20affect%20me%3F-probably%20will-orange.svg)
+```
+![probably will](https://img.shields.io/badge/will%20it%20affect%20me%3F-probably%20will-orange.svg)
+```
+
+![maybe will](https://img.shields.io/badge/will%20it%20affect%20me%3F-maybe%20will-yellow.svg)
+```
+![maybe will](https://img.shields.io/badge/will%20it%20affect%20me%3F-maybe%20will-yellow.svg)
+```
+
+![maybe won't](https://img.shields.io/badge/will%20it%20affect%20me%3F-maybe%20won't-yellowgreen.svg)
+```
+![maybe won't](https://img.shields.io/badge/will%20it%20affect%20me%3F-maybe%20won't-yellowgreen.svg)
+```
+
+![probably won't](https://img.shields.io/badge/will%20it%20affect%20me%3F-probably%20won't-green.svg)
+```
+![probably won't](https://img.shields.io/badge/will%20it%20affect%20me%3F-probably%20won't-green.svg)
+```
+
+![no](https://img.shields.io/badge/will%20it%20affect%20me%3F-no-brightgreen.svg)
+```
+![no](https://img.shields.io/badge/will%20it%20affect%20me%3F-no-brightgreen.svg)
+```
+
+The last, "*will it affect me? no*" is only for MINOR versions. All others are for MAJOR versions. These badges reflect the library author's own personal judgement of how much will the change affect the users. **However, there should always be accurate descriptions of what changed and how to migrate in case the library user is affected by the change.**
+
 ## Compatible Versioning Specification (ComVer)
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
